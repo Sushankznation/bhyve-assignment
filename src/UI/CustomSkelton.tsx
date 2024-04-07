@@ -7,9 +7,8 @@ import {
 } from "@chakra-ui/react";
 
 interface CustomSkeletonProps {
-  refProp?: React.RefObject<HTMLDivElement>;
+  refProp?: React.Ref<HTMLDivElement> | null;
 }
-
 const CustomSkeleton: React.FC<CustomSkeletonProps> = ({ refProp }) => {
   return (
     <Stack direction="column" spacing={4} justifyContent="center" ref={refProp}>

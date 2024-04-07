@@ -1,8 +1,8 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Button, ButtonProps } from "@chakra-ui/react";
 
 interface CustomButtonProps extends ButtonProps {
-  children: ReactNode;
+  ref?: React.Ref<HTMLButtonElement>;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({

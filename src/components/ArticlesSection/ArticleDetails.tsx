@@ -52,7 +52,7 @@ export default function ArticleDetails() {
         dispatch(removeArticle(currentArticle.id)); // Clear the current article from the state
         router.push("/");
       } catch (error) {
-        alert("Error deleting article:", error);
+        alert("Error deleting article: " + error);
       }
     }
   };

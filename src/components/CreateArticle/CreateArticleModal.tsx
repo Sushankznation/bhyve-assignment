@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useCallback } from "react";
 import { CustomButton } from "@/UI";
+import { Articles } from "@/utils/interfaces";
 interface newProductProps {
   isOpen: boolean;
   onClose: () => void;
@@ -54,8 +55,6 @@ export default function CreateProductModal({
       isOpen={isOpen}
       onClose={onClose}
       size="md"
-      bg="teal.500"
-      shadow="dark-lg"
     >
       <ModalOverlay />
       <ModalContent>
