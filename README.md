@@ -1,4 +1,4 @@
-# Next.js E-Commerce Application
+# Bhyve Assignment
 
 This application built with Next.js, using Axios for API requests, Chakra UI for the user interface, and Redux for state management.
 
