@@ -5,14 +5,15 @@ import {
   SkeletonCircle,
   SkeletonText,
 } from "@chakra-ui/react";
+import { wrap } from "module";
 
 interface CustomSkeletonProps {
   refProp?: React.Ref<HTMLDivElement> | null;
 }
 const CustomSkeleton: React.FC<CustomSkeletonProps> = ({ refProp }) => {
   return (
-    <Stack  direction={{ base: "row", lg: "column" }} spacing={4} justifyContent="center" ref={refProp}>
-      <Stack  direction="row" spacing={4} justifyContent="center">
+    <Stack  direction="row"  flexWrap="wrap" spacing={4} justifyContent="center" ref={refProp}>
+      <Stack  direction="row" flexWrap="wrap"  spacing={4} justifyContent="center">
         <Box
           padding="6"
           borderRadius="md"
