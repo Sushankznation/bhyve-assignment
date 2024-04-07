@@ -74,6 +74,7 @@ export default function ArticleDetails() {
       });
   }, [formData]);
 
+
   return (
     <Flex
       mx={8}
