@@ -17,7 +17,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         bgGradient="linear(to-r, #1f2544, #095379)"
         p={4}
         boxShadow="xl"
-        height={{ base: "40vh", lg: "30vh" }}
+        height={{ base: "50vh", lg: "30vh" }}
         textAlign="left"
       >
         <Avatar
