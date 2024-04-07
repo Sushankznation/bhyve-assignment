@@ -12,8 +12,58 @@ interface CustomSkeletonProps {
 }
 const CustomSkeleton: React.FC<CustomSkeletonProps> = ({ refProp }) => {
   return (
-    <Stack  direction="row"  flexWrap="wrap" spacing={4} justifyContent="center" ref={refProp}>
-      <Stack  direction="row" flexWrap="wrap"  spacing={4} justifyContent="center">
+    <Stack
+      direction={{ base: "column", lg: "column" }} // Change direction to "column" for mobile devices
+      spacing={4}
+      justifyContent="center"
+      ref={refProp}
+    >
+      <Stack  direction={{ base: "column", lg: "row" }} spacing={4} justifyContent="center">
+        {" "}
+        <Box
+          padding="6"
+          borderRadius="md"
+          bgGradient="linear(to-r, #1f2544, #095379)"
+          boxShadow="lg"
+          height="30vh"
+          mt="5vh"
+          width="100%"
+          display="flex"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <SkeletonCircle size="20" />
+          <SkeletonText
+            mt="4"
+            noOfLines={4}
+            spacing="4"
+            skeletonHeight="2"
+            width="70%"
+          />
+        </Box>
+        <Box
+          padding="6"
+          borderRadius="md"
+          bgGradient="linear(to-r, #1f2544, #095379)"
+          boxShadow="lg"
+          height="30vh"
+          mt="5vh"
+          width="100%"
+          display="flex"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <SkeletonCircle size="20" />
+          <SkeletonText
+            mt="4"
+            noOfLines={4}
+            spacing="4"
+            skeletonHeight="2"
+            width="70%"
+          />
+        </Box>
+      </Stack>
+      <Stack  direction={{ base: "column", lg: "row" }} spacing={4} justifyContent="center">
         <Box
           padding="6"
           borderRadius="md"
@@ -58,52 +108,7 @@ const CustomSkeleton: React.FC<CustomSkeletonProps> = ({ refProp }) => {
           />
         </Box>
       </Stack>
-      <Stack direction="row" flexWrap="wrap" spacing={4} justifyContent="center">
-        <Box
-          padding="6"
-          borderRadius="md"
-          bgGradient="linear(to-r, #1f2544, #095379)"
-          boxShadow="lg"
-          height="30vh"
-          mt="5vh"
-          width="100%"
-          display="flex"
-          alignItems="center"
-          justifyContent="space-between"
-        >
-          <SkeletonCircle size="20" />
-          <SkeletonText
-            mt="4"
-            noOfLines={4}
-            spacing="4"
-            skeletonHeight="2"
-            width="70%"
-          />
-        </Box>
-
-        <Box
-          padding="6"
-          borderRadius="md"
-          bgGradient="linear(to-r, #1f2544, #095379)"
-          boxShadow="lg"
-          height="30vh"
-          mt="5vh"
-          width="100%"
-          display="flex"
-          alignItems="center"
-          justifyContent="space-between"
-        >
-          <SkeletonCircle size="20" />
-          <SkeletonText
-            mt="4"
-            noOfLines={4}
-            spacing="4"
-            skeletonHeight="2"
-            width="70%"
-          />
-        </Box>
-      </Stack>
-      <Stack direction="row"  flexWrap="wrap" spacing={4} justifyContent="center">
+      <Stack  direction={{ base: "column", lg: "row" }} spacing={4} justifyContent="center">
         <Box
           padding="6"
           borderRadius="md"
