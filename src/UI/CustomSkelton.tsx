@@ -58,7 +58,7 @@ const CustomSkeleton: React.FC<CustomSkeletonProps> = ({ refProp }) => {
           />
         </Box>
       </Stack>
-      <Stack direction="row" spacing={4} justifyContent="center">
+      <Stack direction="row" flexWrap="wrap" spacing={4} justifyContent="center">
         <Box
           padding="6"
           borderRadius="md"
@@ -103,7 +103,7 @@ const CustomSkeleton: React.FC<CustomSkeletonProps> = ({ refProp }) => {
           />
         </Box>
       </Stack>
-      <Stack direction="row" spacing={4} justifyContent="center">
+      <Stack direction="row"  flexWrap="wrap" spacing={4} justifyContent="center">
         <Box
           padding="6"
           borderRadius="md"
